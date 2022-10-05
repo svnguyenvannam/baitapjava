@@ -9,22 +9,32 @@ public abstract class Employee {
     protected String ID;
     protected String FullName;
     protected String BirthDay;
-    protected double Phone;
+    protected String Phone;
     protected String Email;
     protected List<Certificate> certificates;
+
+    protected int Employee_type;
 
     public Employee(){};
 
 
+    public int getEmployee_type() {
+        return Employee_type;
+    }
 
-    public Employee(String ID, String FullName, String BirthDay, double Phone,
-                    String Email, List<Certificate> Certificates){
+    public void setEmployee_type(int employee_type) {
+        Employee_type = employee_type;
+    }
+
+    public Employee(String ID, String FullName, String BirthDay, String Phone,
+                    String Email, List<Certificate> Certificates, int Employee_type){
         this.ID = ID;
         this.FullName = FullName;
         this.BirthDay = BirthDay;
         this.Phone = Phone;
         this.Email = Email;
         this.certificates = Certificates;
+        this.Employee_type =Employee_type;
 
     }
     public abstract void showInfo();
@@ -64,14 +74,14 @@ public abstract class Employee {
         BirthDay = birthDay;
     }
 
-    public double getPhone() {
+    public String getPhone() {
         return Phone;
     }
 
-    public void setPhone(double phone) throws Exception {
+    public void setPhone(String phone) throws Exception {
 
-        if (phone < 0) {
-            throw new PhoneException("Số ddienj thoại không hợp lệ");
+        if (Phone == null) {
+            throw new PhoneException("Số điện thoại không hợp lệ");
         }
 
         Phone = phone;

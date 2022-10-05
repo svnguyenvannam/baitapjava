@@ -13,17 +13,17 @@ public class Validate {
 
             String digit = "\\d";
 
-            System.out.print("Input an integer: ");
+            System.out.print("Nhâp ngày sinh: ");
 
             String input = sc.next();
 
             flag = input.matches(digit);
 
-            if (!flag) System.out.println("You must enter a number!");
+            if (!flag) System.out.println("Bạn phải nhập 1 số!");
 
         } while (!flag);
 
-        System.out.println("Valid data");
+        System.out.println("Ngày sinh hợp lệ");
     }
 
 
@@ -37,17 +37,17 @@ public class Validate {
 
             String digit = "\\d";
 
-            System.out.print("Input an integer: ");
+            System.out.print("Nhập số điện thoại: ");
 
             String input = sc.next();
 
             flag = input.matches(digit);
 
-            if (!flag) System.out.println("You must enter a number!");
+            if (!flag) System.out.println("Bạn phải nhập 1 số!");
 
         } while (!flag);
 
-        System.out.println("Valid data");
+        System.out.println("Số điện thoại hợp lệ");
     }
 
 

@@ -43,7 +43,9 @@ public class Certificate {
         CertificatedDate = certificatedDate;
     }
 
-    Certificate(String CertificatedID, String CertificateName, String CertificateRank, String CertificatedDate){
+    public Certificate(){};
+
+    public Certificate(String CertificatedID, String CertificateName, String CertificateRank, String CertificatedDate){
         this.CertificatedID = CertificatedID;
         this.CertificateName = CertificateName;
         this.CertificateRank = CertificateRank;

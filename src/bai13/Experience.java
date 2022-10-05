@@ -10,9 +10,9 @@ public class Experience extends   Employee{
     public Experience(){};
 
 
-   public Experience(String ID, String FullName, String BirthDay, double Phone,
-                     String Email, List<Certificate> certificates,int ExpInYear, String ProSkill){
-        super(ID,FullName,BirthDay,Phone,Email,certificates);
+   public Experience(String ID, String FullName, String BirthDay, String Phone,
+                     String Email, List<Certificate> certificates,int Employee_type,int ExpInYear, String ProSkill){
+        super(ID,FullName,BirthDay,Phone,Email,certificates,Employee_type);
         this.ExpInYear =ExpInYear;
         this.ProSkill = ProSkill;
 

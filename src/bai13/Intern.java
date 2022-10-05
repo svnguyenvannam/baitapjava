@@ -33,9 +33,9 @@ public class Intern extends Employee{
     }
     public Intern(){};
 
-    public  Intern (String ID, String FullName, String BirthDay, double Phone,
-            String Email,List<Certificate> certificates, String Majors, String Semesteres, String University_name){
-        super(ID, FullName, BirthDay, Phone,Email,certificates);
+    public  Intern (String ID, String FullName, String BirthDay, String Phone,
+            String Email,List<Certificate> certificates,int Employee_type, String Majors, String Semesteres, String University_name){
+        super(ID, FullName, BirthDay, Phone,Email,certificates,Employee_type);
         this.Majors = Majors;
         this.Semesteres = Semesteres;
         this.University_name = University_name;

@@ -33,10 +33,10 @@ public class Fresher extends Employee{
     }
     public Fresher(){};
 
-    public Fresher(String ID, String FullName, String BirthDay, double Phone,
-            String Email, List<Certificate> certificates, String Graduation_date
+    public Fresher(String ID, String FullName, String BirthDay, String Phone,
+            String Email, List<Certificate> certificates,int Employee_type, String Graduation_date
     , String Graduation_rank, String Education) {
-        super(ID, FullName, BirthDay, Phone, Email,certificates);
+        super(ID, FullName, BirthDay, Phone, Email,certificates,Employee_type);
         this.Graduation_date = Graduation_date;
         this.Graduation_rank = Graduation_rank;
         this.Education = Education;

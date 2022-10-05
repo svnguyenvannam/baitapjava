@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Chiều dài văn bản là:"+ b.length());
 
         for (int i = 0; i < b.length(); i++) {
-            if (b.charAt(i)==65) {
+            if (b.charAt(i)=='A') {
                 count ++;
 }
         }

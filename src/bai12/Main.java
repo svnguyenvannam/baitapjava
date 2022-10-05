@@ -112,8 +112,8 @@ public class Main {
                 default :
                     System.out.println("Không hợp lệ");
                     continue;
-                    }
-                }
+            }
+        }
 
-                }
+    }
 }
